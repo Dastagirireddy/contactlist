@@ -80,7 +80,7 @@ The app made up of a number of javascript, css and html files that need to be me
     ```
     gulp run
     ```
-* Browse to the application at [http://localhost:3000]
+* Browse to the application at [http://localhost:5000]
 
 ## Browser Support
 We only regularly test against Chrome 29 and occasionally against Firefox and Internet Explorer.
