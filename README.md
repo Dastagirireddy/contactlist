@@ -38,8 +38,8 @@ You need to install Node.js and then the development tools. Node.js comes with a
 Either clone this repository or fork it on GitHub and clone your fork:
 
 ```
-git clone https://github.com/Dastagirireddy/Angular-RequireJS-Karma-Jasmine.git
-cd Angular-RequireJS-Karma-Jasmine
+git clone https://github.com/Dastagirireddy/contactlist.git
+cd contactlist
 ```
 
 ### App Server
