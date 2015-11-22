@@ -1,0 +1,10 @@
+<div class="container" style="width:75%; margin: 0 auto;font-size: 24px;line-height: 1.5">
+	<div class="title" style="background-color: #eee; text-align: center; padding: 10px 0 10px 0;">
+		Directory: <%= path %>
+	</div>
+	<ul>
+		<% for(var i=0; i<files.length; i++) { %>
+		<li style="list-style:none"><a style="text-decoration: none" href="<%= path + files[i] %>"><%= files[i] %></a></li>
+		<% } %>
+	</ul>
+</div>
