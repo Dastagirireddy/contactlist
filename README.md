@@ -61,7 +61,15 @@ Our client application is a straight HTML/Javascript application but our develop
 ## Building
 
 ### Configure Server
-The server stores its data in a [MongoDb] (mongodb.com) database.
+The server stores its data in a [MongoDb] (mongodb.com) database. Make sure you have already configures the MongoDb.
+
+    For unix / unix / mac systems use this commad to install.
+    ```
+    sudo apt-get install mongodb
+    
+    For windows systems use this info. [MongoDb] (http://stackoverflow.com/questions/2438055/how-to-run-mongodb-as-windows-service)
+    
+    ```
 
 ### Build the app
 The app made up of a number of javascript, css and html files that need to be merged into a final distribution for running.  We use the gulp build tool to do this.
@@ -92,29 +100,23 @@ testing against browsers that you need to support.
 
 ### Folders structure
 At the top level, the repository is split into a client folder and a server folder.  The client folder contains all the client-side AngularJS application.  The server folder contains a very basic Express based webserver that delivers and supports the application.
-Within the client folder you have the following structure:
 * `node_modules` contains build tasks for gulp along with other, user-installed, Node packages
 * `dist` contains build results
 * `src` contains application's sources
+* '\'
+* ` -client` contains client side AngularJs code
+* ' -server' contains server side express logic
 * `test` contains test sources, configuration and dependencies
 * `vendor` contains external dependencies for the application
-
-### Default Build
-The default gulp task will build (checks the javascript (lint), runs the unit tests (test:unit) and builds distributable files) and run all unit tests: `gulp` (or `gulp.cmd` on Windows).  The tests are run by karma and need one or more browsers open to actually run the tests.
-* `gulp`
-* Open one or more browsers and point them to [http://localhost:8080/__test/].  Once the browsers connect the tests will run and the build will complete.
-* If you leave the browsers open at this url then future runs of `gulp` will automatically run the tests against these browsers.
-
-### Continuous Building
-The watch gulp task will monitor the source files and run the default build task every time a file changes: `gulp watch`.
+* 'build' contains all the configurations for project build, tests ad jasmine runner.
 
 ### Build without tests
 If for some reason you don't want to run the test but just generate the files - not a good idea(!!) - you can simply run the build task: `gulp build`.
 
-### Continuous testing
+* If build completed successfully then you will find the stuff in `dist` folder
+
+### Testing
 You can have gulp (karma) continuously watch for file changes and automatically run all the tests on every change, without rebuilding the distribution files.  This can make the test run faster when you are doing test driven development and don't need to actually run the application itself.
 
-* `cd client`
 * Run `gulp test`.
-* Open one or more browsers and point them to [http://localhost:8080/__test/].
-* Each time a file changes the tests will be run against each browser.
+* If test executed successfully then if you will find stuff in `coverage` folder
