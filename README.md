@@ -30,7 +30,7 @@ You need to install Node.js and then the development tools. Node.js comes with a
 * Install gulp and Karma as global npm modules:
 
     ```
-    npm install -g gulp karma
+    npm install -g gulp karma-cli
     ```
 
 ### Get the Code
