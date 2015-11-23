@@ -63,13 +63,11 @@ Our client application is a straight HTML/Javascript application but our develop
 ### Configure Server
 The server stores its data in a [MongoDb] (mongodb.com) database. Make sure you have already configures the MongoDb.
 
-    For unix / unix / mac systems use this commad to install.
+* Unix / linux / Mac OS use this command
     ```
     sudo apt-get install mongodb
-    
-    For windows systems use this info      [MongoDb](http://stackoverflow.com/questions/2438055/how-to-run-mongodb-as-windows-service)
-    
     ```
+* Windows OS use this info [npm](http://stackoverflow.com/questions/2438055/how-to-run-mongodb-as-windows-service)
 
 ### Build the app
 The app made up of a number of javascript, css and html files that need to be merged into a final distribution for running.  We use the gulp build tool to do this.
