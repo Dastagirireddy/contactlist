@@ -101,7 +101,7 @@ At the top level, the repository is split into a client folder and a server fold
 * `node_modules` contains build tasks for gulp along with other, user-installed, Node packages
 * `dist` contains build results
 * `src` contains application's sources
-* '\'
+* ` |`
 * ` |-client` contains client side AngularJs code
 * ` |-server` contains server side express logic
 * `test` contains test sources, configuration and dependencies
