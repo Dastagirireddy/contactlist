@@ -67,7 +67,7 @@ The server stores its data in a [MongoDb] (mongodb.com) database. Make sure you 
     ```
     sudo apt-get install mongodb
     
-    For windows systems use this info. [MongoDb] (http://stackoverflow.com/questions/2438055/how-to-run-mongodb-as-windows-service)
+    For windows systems use this info      [MongoDb](http://stackoverflow.com/questions/2438055/how-to-run-mongodb-as-windows-service)
     
     ```
 
@@ -104,8 +104,8 @@ At the top level, the repository is split into a client folder and a server fold
 * `dist` contains build results
 * `src` contains application's sources
 * '\'
-* ` -client` contains client side AngularJs code
-* ' -server' contains server side express logic
+* ` |-client` contains client side AngularJs code
+* ` |-server` contains server side express logic
 * `test` contains test sources, configuration and dependencies
 * `vendor` contains external dependencies for the application
 * 'build' contains all the configurations for project build, tests ad jasmine runner.
